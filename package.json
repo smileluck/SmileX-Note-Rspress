@@ -9,12 +9,12 @@
     "preview": "rspress preview"
   },
   "dependencies": {
-    "@rspress/core": "^2.0.2",
     "gray-matter": "^4.0.3",
     "rspress-plugin-devkit": "^1.0.0",
     "rspress-plugin-giscus": "^1.0.4"
   },
   "devDependencies": {
+    "@rspress/core": "^2.0.10",
     "@types/node": "^22.8.1",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
