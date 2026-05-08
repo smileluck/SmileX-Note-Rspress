@@ -1,12 +1,7 @@
 [
   {
-    "text": "Guide",
-    "link": "/guide/",
-    "activeMatch": "/guide/"
-  },
-  {
-    "text": "crawl",
-    "link": "/crawl/",
-    "activeMatch": "/crawl/"
+    "text": "Plan",
+    "link": "/plan/",
+    "activeMatch": "/plan/"
   }
 ]
