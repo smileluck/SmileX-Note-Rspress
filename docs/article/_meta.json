@@ -1,0 +1,14 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "主页"
+  },
+  {
+    "type": "dir",
+    "name": "trae",
+    "label": "trae",
+    "collapsible": true,
+    "collapsed": false
+  }
+]

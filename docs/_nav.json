@@ -3,5 +3,17 @@
     "text": "Plan",
     "link": "/plan/",
     "activeMatch": "/plan/"
+  },
+  {
+    "text": "Article",
+    "link": "/article/",
+    "activeMatch": "/article/",
+    "items": [
+      {
+        "text": "Trae",
+        "link": "/article/trae/",
+        "activeMatch": "/article/trae/"
+      }
+    ]
   }
 ]
