@@ -3,6 +3,8 @@ import { defineConfig } from '@rspress/core';
 import { pluginGiscus } from 'rspress-plugin-giscus'; // 或 rspress-plugin-code-giscus;
 import { resourcePlugin } from './plugins/resource.js';
 import { AutoMetaPlugin } from './plugins/auto-meta-plugin'
+import { ResolveAssetsPlugin } from './plugins/resolve-assets-plugin'
+
 
 
 export default defineConfig({
@@ -45,23 +47,23 @@ export default defineConfig({
     justify: 'center',
   })
   ],
-  // builderConfig: {
-  //   source: {
-  //     assetsInclude: /\.pdf$/,
-  //   },
-  //   tools: {
-  //     rspack: (config, { addRules }) => {
-  //       // 确保 plugins 数组存在
-  //       config.plugins = config.plugins || [];
-  //       config.plugins.push(new ResolveAssetsPlugin());
+  builderConfig: {
+    source: {
+      assetsInclude: /\.pdf$/,
+    },
+    tools: {
+      rspack: (config, { addRules }) => {
+        // 确保 plugins 数组存在
+        config.plugins = config.plugins || [];
+        config.plugins.push(new ResolveAssetsPlugin());
 
-  //       addRules([
-  //         {
-  //           test: /\.pdf$/,
-  //           // 将资源转换为单独的文件，并且导出产物地址
-  //           type: 'asset/resource',
-  //         }])
-  //     }
-  //   }
-  // },
+        addRules([
+          {
+            test: /\.pdf$/,
+            // 将资源转换为单独的文件，并且导出产物地址
+            type: 'asset/resource',
+          }])
+      }
+    }
+  },
 });

@@ -8,7 +8,7 @@ export class ResolveAssetsPlugin {
             nmf.hooks.beforeResolve.tap("ResolveAssetsPlugin", (resolveData: any) => {
                 // 检查请求是否以 "assets/" 开头，且不是标准相对路径、绝对路径或外部链接
                 if (
-                    resolveData.request.startsWith("assets/") &&
+                    resolveData.request.startsWith("_assets/") &&
                     !resolveData.request.startsWith("./") &&
                     !resolveData.request.startsWith("/") &&
                     !resolveData.request.includes("://")
