@@ -24,12 +24,12 @@ export default defineConfig({
       {
         icon: 'github',
         mode: 'link',
-        content: 'https://github.com/smileluck/SmileX-Note-Repress',
+        content: 'https://github.com/smileluck/SmileX-Note-Rspress',
       },
     ],
   },
   plugins: [pluginGiscus({
-    repo: 'smileluck/smilex-Note-Repress',
+    repo: 'smileluck/smilex-Note-Rspress',
     repoId: 'R_kgDORXWUpA',
     category: 'General',
     categoryId: 'DIC_kwDORXWUpM4C3GT9',
